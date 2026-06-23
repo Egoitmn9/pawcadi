@@ -1,0 +1,35 @@
+<!--
+  PAWCADI — Redirect the Shopify storefront to the main website.
+
+  WHAT IT DOES
+  Any visitor who lands on pawcadi.myshopify.com (home, cart, product, the
+  "Return to cart" link inside checkout, etc.) is sent to your real site:
+  https://egoitmn9.github.io/pawcadi/
+
+  It is SAFE:
+   - Checkout / payment pages are NOT affected (they aren't part of the theme).
+   - The Shopify theme editor is NOT affected (designMode guard), so you can
+     still open/customize the theme without being redirected.
+   - Uses location.replace(), so the browser "back" button won't get stuck.
+
+  HOW TO INSTALL (Shopify admin)
+   1. admin.shopify.com  ->  your store  ->  Online Store  ->  Themes
+   2. On your current theme ("Savor"), click  ...  (three dots)  ->  Edit code
+   3. Left sidebar, under "Layout", open  theme.liquid
+   4. Find the <head> tag near the top. Click on a new line RIGHT AFTER it.
+   5. Paste the <script> block below.
+   6. Click Save (top right).  Done.
+
+  TO UNDO LATER: delete the <script> block and Save.
+-->
+<script>
+  (function () {
+    // Don't redirect inside Shopify's theme editor (so you can still edit it).
+    if (window.Shopify && window.Shopify.designMode) return;
+    // Don't touch checkout pages.
+    var path = window.location.pathname;
+    if (path.indexOf("/checkout") === 0 || path.indexOf("/checkouts") === 0) return;
+    // Send everyone to the main Pawcadi website.
+    window.location.replace("https://egoitmn9.github.io/pawcadi/");
+  })();
+</script>

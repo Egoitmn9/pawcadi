@@ -234,6 +234,23 @@ section { padding: 84px 0; }
   transition: background .2s ease;
 }
 .cart-btn:hover { background: var(--brand-dark); }
+
+.lang-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  color: var(--ink);
+  border: 1.5px solid var(--line);
+  padding: 9px 13px;
+  border-radius: 100px;
+  font: inherit;
+  font-weight: 600;
+  font-size: .85rem;
+  cursor: pointer;
+  transition: border-color .2s ease, background .2s ease;
+}
+.lang-btn:hover { border-color: var(--brand); background: var(--brand-soft); }
 .cart-count {
   background: var(--accent);
   color: #fff;

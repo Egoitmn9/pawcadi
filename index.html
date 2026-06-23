@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pawcadi — Enrichment Lick Mats for Dogs | Calm, Slow-Feed &amp; Treat</title>
-  <meta name="description" content="Pawcadi makes vet-approved silicone lick mats that calm anxious dogs, slow down fast eaters and turn treat time into 20 minutes of happy enrichment. Free US shipping over $35." />
+  <meta name="description" content="Pawcadi makes vet-approved silicone lick mats that calm anxious dogs, slow down fast eaters and turn treat time into 20 minutes of happy enrichment." />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Pawcadi — Enrichment Lick Mats for Dogs" />
@@ -24,7 +24,7 @@
 <body>
 
   <!-- Announcement bar -->
-  <div class="announce">
+  <div class="announce" data-i18n-html="announce">
     🐾 <b>FREE</b> US shipping on orders over <b>$35</b> &nbsp;·&nbsp; 30-day happy-dog guarantee
   </div>
 
@@ -43,20 +43,23 @@
       </a>
 
       <nav class="nav-links" aria-label="Primary">
-        <a href="#shop">Shop</a>
-        <a href="#benefits">Why Lick Mats</a>
-        <a href="#how">How It Works</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#faq">FAQ</a>
+        <a href="#shop" data-i18n="nav.shop">Shop</a>
+        <a href="#benefits" data-i18n="nav.why">Why Lick Mats</a>
+        <a href="#how" data-i18n="nav.how">How It Works</a>
+        <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
+        <a href="#faq" data-i18n="nav.faq">FAQ</a>
       </nav>
 
       <div class="nav-actions">
+        <button class="lang-btn" id="langToggle" aria-label="Switch language / Cambiar idioma">
+          <span aria-hidden="true">🌐</span><span id="langCode">EN</span>
+        </button>
         <button class="cart-btn" id="openCart" aria-haspopup="dialog">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
             <path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/>
           </svg>
-          <span class="label">Cart</span>
+          <span class="label" data-i18n="nav.cart">Cart</span>
           <span class="cart-count" id="cartCount">0</span>
         </button>
         <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
@@ -71,20 +74,20 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <span class="eyebrow">Vet-approved enrichment</span>
-          <h1>Turn treat time into <em>20 minutes of calm</em>.</h1>
-          <p class="hero-lead">
+          <span class="eyebrow" data-i18n="hero.eyebrow">Vet-approved enrichment</span>
+          <h1 data-i18n-html="hero.h1">Turn treat time into <em>20 minutes of calm</em>.</h1>
+          <p class="hero-lead" data-i18n="hero.lead">
             The Pawcadi mat slows down fast eaters, soothes anxious pups and beats
             boredom — just spread, freeze and let the licking begin. Easy to clean,
             built to last, loved by dogs across the USA.
           </p>
           <div class="hero-cta">
-            <a href="#shop" class="btn btn-primary">Shop the Lick Mat →</a>
-            <a href="#how" class="btn btn-ghost">See how it works</a>
+            <a href="#shop" class="btn btn-primary" data-i18n="hero.cta1">Shop the Lick Mat →</a>
+            <a href="#how" class="btn btn-ghost" data-i18n="hero.cta2">See how it works</a>
           </div>
           <div class="hero-rating">
             <span class="stars" aria-hidden="true">★★★★★</span>
-            <span><b>4.9/5</b> from 2,400+ happy dog parents</span>
+            <span data-i18n-html="hero.rating"><b>4.9/5</b> from 2,400+ happy dog parents</span>
           </div>
         </div>
 
@@ -95,11 +98,11 @@
           </div>
           <div class="floating-card tl">
             <span class="ic">🦷</span>
-            <span>Dental friendly<small>Soothes &amp; cleans</small></span>
+            <span data-i18n-html="hero.card1">Dental friendly<small>Soothes &amp; cleans</small></span>
           </div>
           <div class="floating-card br">
             <span class="ic">⏱️</span>
-            <span>20 min of calm<small>Per fill, on average</small></span>
+            <span data-i18n-html="hero.card2">20 min of calm<small>Per fill, on average</small></span>
           </div>
         </div>
       </div>
@@ -108,10 +111,10 @@
     <!-- Trust strip -->
     <div class="trust">
       <div class="container trust-grid">
-        <div class="trust-item"><span class="ic">🌱</span> Food-grade silicone <small>100% BPA-free</small></div>
-        <div class="trust-item"><span class="ic">🧼</span> Dishwasher safe <small>Clean in seconds</small></div>
-        <div class="trust-item"><span class="ic">🚚</span> Fast US shipping <small>Free over $35</small></div>
-        <div class="trust-item"><span class="ic">💚</span> 30-day guarantee <small>Love it or refund</small></div>
+        <div class="trust-item"><span class="ic">🌱</span> <span data-i18n-html="trust.silicone">Food-grade silicone <small>100% BPA-free</small></span></div>
+        <div class="trust-item"><span class="ic">🧼</span> <span data-i18n-html="trust.dishwasher">Dishwasher safe <small>Clean in seconds</small></span></div>
+        <div class="trust-item"><span class="ic">🚚</span> <span data-i18n-html="trust.shipping">Fast US shipping <small>Free over $35</small></span></div>
+        <div class="trust-item"><span class="ic">💚</span> <span data-i18n-html="trust.guarantee">30-day guarantee <small>Love it or refund</small></span></div>
       </div>
     </div>
 
@@ -145,21 +148,21 @@
           <div class="buybox">
             <div class="rating-row">
               <span class="stars" aria-hidden="true">★★★★★</span>
-              <span>4.9 (2,418 reviews)</span>
+              <span data-i18n="prod.reviews">4.9 (2,418 reviews)</span>
             </div>
-            <h2>The Pawcadi Enrichment Mat</h2>
-            <p class="subtitle">Spread. Freeze. Lick. The simplest way to calm, entertain and slow-feed your dog every single day. 20&nbsp;cm (7.9″) of food-grade silicone.</p>
+            <h2 data-i18n="prod.title">The Pawcadi Enrichment Mat</h2>
+            <p class="subtitle" data-i18n-html="prod.subtitle">Spread. Freeze. Lick. The simplest way to calm, entertain and slow-feed your dog every single day. 20&nbsp;cm (7.9″) of food-grade silicone.</p>
 
             <div class="price-row">
               <span class="price" id="displayPrice">$15.00</span>
-              <span class="price-old">$24.95</span>
-              <span class="price-save">Save 40%</span>
+              <span class="price-old" id="priceCompare">$24.95</span>
+              <span class="price-save" id="priceSave">Save 40%</span>
             </div>
-            <p class="tax-note">Tax included. Free US shipping over $35.</p>
+            <p class="tax-note" data-i18n="prod.tax">Tax included. Free US shipping over $35.</p>
 
             <!-- Color -->
             <div class="opt-group">
-              <div class="opt-label">Color: <span class="val" id="colorVal">Leaf Green</span></div>
+              <div class="opt-label"><span data-i18n="prod.color">Color:</span> <span class="val" id="colorVal">Leaf Green</span></div>
               <div class="swatches" id="colorSwatches" role="group" aria-label="Color">
                 <button class="swatch is-active" data-color="#7fa650" data-name="Leaf Green" style="background:#7fa650" aria-label="Leaf Green"></button>
                 <button class="swatch" data-color="#3fa9c9" data-name="Ocean Blue" style="background:#3fa9c9" aria-label="Ocean Blue"></button>
@@ -169,11 +172,11 @@
 
             <!-- Bundle / size -->
             <div class="opt-group">
-              <div class="opt-label">Bundle</div>
+              <div class="opt-label" data-i18n="prod.bundle">Bundle</div>
               <div class="swatches" id="bundleSwatches" role="group" aria-label="Bundle">
-                <button class="swatch is-active" data-price="15.00" data-units="1" data-name="Single Mat">Single — $15.00</button>
-                <button class="swatch" data-price="27.00" data-units="2" data-name="2-Pack (Best Value)">2-Pack — $27.00</button>
-                <button class="swatch" data-price="36.00" data-units="3" data-name="3-Pack">3-Pack — $36.00</button>
+                <button class="swatch is-active" data-bundle="single" data-units="1">Single — $15.00</button>
+                <button class="swatch" data-bundle="2pack" data-units="2">2-Pack — $27.00</button>
+                <button class="swatch" data-bundle="3pack" data-units="3">3-Pack — $36.00</button>
               </div>
             </div>
 
@@ -184,14 +187,14 @@
                 <input id="qtyInput" type="number" value="1" min="1" max="20" inputmode="numeric" aria-label="Quantity" />
                 <button type="button" id="qtyPlus" aria-label="Increase quantity">+</button>
               </div>
-              <button class="btn btn-primary btn-add" id="addToCart">Add to cart</button>
+              <button class="btn btn-primary btn-add" id="addToCart" data-i18n="prod.add">Add to cart</button>
             </div>
 
             <ul class="buy-perks">
-              <li><span class="ic">✓</span> Slows fast eaters &amp; aids digestion</li>
-              <li><span class="ic">✓</span> Releases calming, anxiety-easing focus</li>
-              <li><span class="ic">✓</span> Strong suction base — stays put, no mess</li>
-              <li><span class="ic">✓</span> Freezer, microwave &amp; dishwasher safe</li>
+              <li><span class="ic">✓</span> <span data-i18n="prod.perk1">Slows fast eaters &amp; aids digestion</span></li>
+              <li><span class="ic">✓</span> <span data-i18n="prod.perk2">Releases calming, anxiety-easing focus</span></li>
+              <li><span class="ic">✓</span> <span data-i18n="prod.perk3">Strong suction base — stays put, no mess</span></li>
+              <li><span class="ic">✓</span> <span data-i18n="prod.perk4">Freezer, microwave &amp; dishwasher safe</span></li>
             </ul>
           </div>
         </div>
@@ -202,40 +205,40 @@
     <section id="benefits">
       <div class="container">
         <div class="section-head">
-          <span class="eyebrow">Why dogs &amp; vets love it</span>
-          <h2>More than a treat — it's enrichment</h2>
-          <p>Licking is a natural, self-soothing behavior. A Pawcadi mat channels it into real benefits your dog feels every day.</p>
+          <span class="eyebrow" data-i18n="ben.eyebrow">Why dogs &amp; vets love it</span>
+          <h2 data-i18n="ben.title">More than a treat — it's enrichment</h2>
+          <p data-i18n="ben.lead">Licking is a natural, self-soothing behavior. A Pawcadi mat channels it into real benefits your dog feels every day.</p>
         </div>
         <div class="benefits-grid">
           <article class="benefit">
             <div class="ic">😌</div>
-            <h3>Calms anxiety</h3>
-            <p>Repetitive licking releases endorphins that ease stress during storms, vet visits, grooming and time alone.</p>
+            <h3 data-i18n="ben.1t">Calms anxiety</h3>
+            <p data-i18n="ben.1p">Repetitive licking releases endorphins that ease stress during storms, vet visits, grooming and time alone.</p>
           </article>
           <article class="benefit">
             <div class="ic">🍽️</div>
-            <h3>Slows fast eaters</h3>
-            <p>Spreading food across the textured surface turns a 30-second gulp into a mindful meal — better for digestion.</p>
+            <h3 data-i18n="ben.2t">Slows fast eaters</h3>
+            <p data-i18n="ben.2p">Spreading food across the textured surface turns a 30-second gulp into a mindful meal — better for digestion.</p>
           </article>
           <article class="benefit">
             <div class="ic">🧠</div>
-            <h3>Beats boredom</h3>
-            <p>Mental stimulation tires dogs out the healthy way and curbs destructive chewing, barking and pacing.</p>
+            <h3 data-i18n="ben.3t">Beats boredom</h3>
+            <p data-i18n="ben.3p">Mental stimulation tires dogs out the healthy way and curbs destructive chewing, barking and pacing.</p>
           </article>
           <article class="benefit">
             <div class="ic">🦷</div>
-            <h3>Supports oral health</h3>
-            <p>The raised nubs gently massage gums and help scrape away plaque with every happy lick.</p>
+            <h3 data-i18n="ben.4t">Supports oral health</h3>
+            <p data-i18n="ben.4p">The raised nubs gently massage gums and help scrape away plaque with every happy lick.</p>
           </article>
           <article class="benefit">
             <div class="ic">🛁</div>
-            <h3>Stress-free grooming</h3>
-            <p>Stick it to the tub or wall to distract your pup through baths, nail trims and brushing.</p>
+            <h3 data-i18n="ben.5t">Stress-free grooming</h3>
+            <p data-i18n="ben.5p">Stick it to the tub or wall to distract your pup through baths, nail trims and brushing.</p>
           </article>
           <article class="benefit">
             <div class="ic">🧼</div>
-            <h3>Effortless cleanup</h3>
-            <p>One solid piece of food-grade silicone — pop it in the dishwasher and it's ready for tomorrow.</p>
+            <h3 data-i18n="ben.6t">Effortless cleanup</h3>
+            <p data-i18n="ben.6p">One solid piece of food-grade silicone — pop it in the dishwasher and it's ready for tomorrow.</p>
           </article>
         </div>
       </div>
@@ -245,24 +248,24 @@
     <section id="how" class="how">
       <div class="container">
         <div class="section-head">
-          <span class="eyebrow">Ready in 60 seconds</span>
-          <h2>Three steps to a calmer dog</h2>
+          <span class="eyebrow" data-i18n="how.eyebrow">Ready in 60 seconds</span>
+          <h2 data-i18n="how.title">Three steps to a calmer dog</h2>
         </div>
         <div class="steps">
           <div class="step">
             <div class="num">1</div>
-            <h3>Spread</h3>
-            <p>Smear on peanut butter, yogurt, wet food, pumpkin or your dog's favorite treat.</p>
+            <h3 data-i18n="how.1t">Spread</h3>
+            <p data-i18n="how.1p">Smear on peanut butter, yogurt, wet food, pumpkin or your dog's favorite treat.</p>
           </div>
           <div class="step">
             <div class="num">2</div>
-            <h3>Freeze</h3>
-            <p>Pop it in the freezer for 1–2 hours to make the challenge last even longer.</p>
+            <h3 data-i18n="how.2t">Freeze</h3>
+            <p data-i18n="how.2p">Pop it in the freezer for 1–2 hours to make the challenge last even longer.</p>
           </div>
           <div class="step">
             <div class="num">3</div>
-            <h3>Lick</h3>
-            <p>Press the suction base down and let your pup enjoy 20+ minutes of happy focus.</p>
+            <h3 data-i18n="how.3t">Lick</h3>
+            <p data-i18n="how.3p">Press the suction base down and let your pup enjoy 20+ minutes of happy focus.</p>
           </div>
         </div>
       </div>
@@ -272,36 +275,36 @@
     <section id="reviews">
       <div class="container">
         <div class="section-head">
-          <span class="eyebrow">★★★★★ 4.9 average</span>
-          <h2>Loved by 2,400+ dog parents</h2>
-          <p>Real reviews from real (very good) dogs across the United States.</p>
+          <span class="eyebrow" data-i18n="rev.eyebrow">★★★★★ 4.9 average</span>
+          <h2 data-i18n="rev.title">Loved by 2,400+ dog parents</h2>
+          <p data-i18n="rev.lead">Real reviews from real (very good) dogs across the United States.</p>
         </div>
         <div class="reviews-grid">
           <article class="review">
             <div class="stars" aria-hidden="true">★★★★★</div>
-            <p>"My rescue used to inhale her food in seconds. The Pawcadi mat slowed her right down and she's so much calmer at mealtimes now. Game changer."</p>
+            <p data-i18n="rev.1p">"My rescue used to inhale her food in seconds. The Pawcadi mat slowed her right down and she's so much calmer at mealtimes now. Game changer."</p>
             <div class="reviewer">
-              <span class="avatar">JM</span>
-              <span>Jessica M. <small>Austin, TX</small></span>
-              <span class="verified">✓ Verified</span>
+              <span class="avatar" data-i18n="rev.1a">JM</span>
+              <span data-i18n-html="rev.1n">Jessica M. <small>Austin, TX</small></span>
+              <span class="verified" data-i18n="rev.verified">✓ Verified</span>
             </div>
           </article>
           <article class="review">
             <div class="stars" aria-hidden="true">★★★★★</div>
-            <p>"Bath time was a nightmare until this. I stick it to the shower wall with peanut butter and my Lab doesn't even notice the water anymore."</p>
+            <p data-i18n="rev.2p">"Bath time was a nightmare until this. I stick it to the shower wall with peanut butter and my Lab doesn't even notice the water anymore."</p>
             <div class="reviewer">
-              <span class="avatar">DR</span>
-              <span>Derek R. <small>Denver, CO</small></span>
-              <span class="verified">✓ Verified</span>
+              <span class="avatar" data-i18n="rev.2a">DR</span>
+              <span data-i18n-html="rev.2n">Derek R. <small>Denver, CO</small></span>
+              <span class="verified" data-i18n="rev.verified">✓ Verified</span>
             </div>
           </article>
           <article class="review">
             <div class="stars" aria-hidden="true">★★★★★</div>
-            <p>"Thick, sturdy silicone — way better quality than the cheap one I had before. Goes straight in the dishwasher and the suction actually holds."</p>
+            <p data-i18n="rev.3p">"Thick, sturdy silicone — way better quality than the cheap one I had before. Goes straight in the dishwasher and the suction actually holds."</p>
             <div class="reviewer">
-              <span class="avatar">PT</span>
-              <span>Priya T. <small>Seattle, WA</small></span>
-              <span class="verified">✓ Verified</span>
+              <span class="avatar" data-i18n="rev.3a">PT</span>
+              <span data-i18n-html="rev.3n">Priya T. <small>Seattle, WA</small></span>
+              <span class="verified" data-i18n="rev.verified">✓ Verified</span>
             </div>
           </article>
         </div>
@@ -312,34 +315,34 @@
     <section id="faq">
       <div class="container">
         <div class="section-head">
-          <span class="eyebrow">Good questions</span>
-          <h2>Frequently asked</h2>
+          <span class="eyebrow" data-i18n="faq.eyebrow">Good questions</span>
+          <h2 data-i18n="faq.title">Frequently asked</h2>
         </div>
         <div class="faq">
           <div class="faq-item">
-            <button class="faq-q">Is the Pawcadi mat safe for my dog?
+            <button class="faq-q"><span data-i18n="faq.q1">Is the Pawcadi mat safe for my dog?</span>
               <span class="chev" aria-hidden="true">▾</span></button>
-            <div class="faq-a"><p>Yes. It's made from 100% food-grade, BPA-free silicone with no fillers. As with any feeding product, always supervise your dog and replace the mat if it becomes damaged.</p></div>
+            <div class="faq-a"><p data-i18n="faq.a1">Yes. It's made from 100% food-grade, BPA-free silicone with no fillers. As with any feeding product, always supervise your dog and replace the mat if it becomes damaged.</p></div>
           </div>
           <div class="faq-item">
-            <button class="faq-q">What can I put on it?
+            <button class="faq-q"><span data-i18n="faq.q2">What can I put on it?</span>
               <span class="chev" aria-hidden="true">▾</span></button>
-            <div class="faq-a"><p>Anything spreadable and dog-safe: peanut butter (xylitol-free), plain yogurt, wet food, mashed banana, pumpkin purée, bone broth or wet kibble. Freeze it to make the fun last longer.</p></div>
+            <div class="faq-a"><p data-i18n="faq.a2">Anything spreadable and dog-safe: peanut butter (xylitol-free), plain yogurt, wet food, mashed banana, pumpkin purée, bone broth or wet kibble. Freeze it to make the fun last longer.</p></div>
           </div>
           <div class="faq-item">
-            <button class="faq-q">How do I clean it?
+            <button class="faq-q"><span data-i18n="faq.q3">How do I clean it?</span>
               <span class="chev" aria-hidden="true">▾</span></button>
-            <div class="faq-a"><p>It's top-rack dishwasher safe, or rinse it under warm soapy water. The single-piece silicone design means no cracks or seams for food to hide in.</p></div>
+            <div class="faq-a"><p data-i18n="faq.a3">It's top-rack dishwasher safe, or rinse it under warm soapy water. The single-piece silicone design means no cracks or seams for food to hide in.</p></div>
           </div>
           <div class="faq-item">
-            <button class="faq-q">Will it work for any size dog?
+            <button class="faq-q"><span data-i18n="faq.q4">Will it work for any size dog?</span>
               <span class="chev" aria-hidden="true">▾</span></button>
-            <div class="faq-a"><p>Absolutely — from Chihuahuas to Great Danes. The mat suits all breeds; just match the portion size to your dog and supervise smaller pups.</p></div>
+            <div class="faq-a"><p data-i18n="faq.a4">Absolutely — from Chihuahuas to Great Danes. The mat suits all breeds; just match the portion size to your dog and supervise smaller pups.</p></div>
           </div>
           <div class="faq-item">
-            <button class="faq-q">What's your shipping &amp; return policy?
+            <button class="faq-q"><span data-i18n="faq.q5">What's your shipping &amp; return policy?</span>
               <span class="chev" aria-hidden="true">▾</span></button>
-            <div class="faq-a"><p>We ship across the USA in 3–5 business days, free on orders over $35. Not happy? Return it within 30 days for a full refund — no questions asked.</p></div>
+            <div class="faq-a"><p data-i18n="faq.a5">We ship across the USA in 3–5 business days, free on orders over $35. Not happy? Return it within 30 days for a full refund — no questions asked.</p></div>
           </div>
         </div>
       </div>
@@ -349,13 +352,13 @@
     <section>
       <div class="container">
         <div class="cta-band">
-          <h2>Give your dog a calmer, happier routine</h2>
-          <p>Join 2,400+ dog parents and get enrichment tips, exclusive offers and 10% off your first order.</p>
+          <h2 data-i18n="cta.title">Give your dog a calmer, happier routine</h2>
+          <p data-i18n="cta.lead">Join 2,400+ dog parents and get enrichment tips, exclusive offers and 10% off your first order.</p>
           <form class="newsletter" id="newsletter">
-            <input type="email" placeholder="Your email address" aria-label="Email address" required />
-            <button class="btn btn-primary" type="submit">Get 10% off</button>
+            <input type="email" placeholder="Your email address" data-i18n-ph="cta.email" aria-label="Email address" required />
+            <button class="btn btn-primary" type="submit" data-i18n="cta.btn">Get 10% off</button>
           </form>
-          <p class="cta-note">No spam, just good dog stuff. Unsubscribe anytime.</p>
+          <p class="cta-note" data-i18n="cta.note">No spam, just good dog stuff. Unsubscribe anytime.</p>
         </div>
       </div>
     </section>
@@ -375,7 +378,7 @@
             </svg>
             <span style="color:#fff">Paw<b style="color:#ff8a5b">cadi</b></span>
           </a>
-          <p>Enrichment lick mats designed to calm, entertain and slow-feed the dogs we love. Made from food-grade silicone, backed by a 30-day happy-dog guarantee.</p>
+          <p data-i18n="foot.about">Enrichment lick mats designed to calm, entertain and slow-feed the dogs we love. Made from food-grade silicone, backed by a 30-day happy-dog guarantee.</p>
           <div class="socials">
             <a href="#" aria-label="Instagram">📷</a>
             <a href="#" aria-label="TikTok">🎵</a>
@@ -383,26 +386,26 @@
           </div>
         </div>
         <div class="footer-col">
-          <h4>Shop</h4>
-          <a href="#shop">Lick Mat</a>
-          <a href="#shop">Bundles</a>
-          <a href="#shop">Gift cards</a>
+          <h4 data-i18n="foot.shopH">Shop</h4>
+          <a href="#shop" data-i18n="foot.shop1">Lick Mat</a>
+          <a href="#shop" data-i18n="foot.shop2">Bundles</a>
+          <a href="#shop" data-i18n="foot.shop3">Gift cards</a>
         </div>
         <div class="footer-col">
-          <h4>Learn</h4>
-          <a href="#benefits">Why lick mats</a>
-          <a href="#how">How it works</a>
-          <a href="#faq">FAQ</a>
+          <h4 data-i18n="foot.learnH">Learn</h4>
+          <a href="#benefits" data-i18n="foot.learn1">Why lick mats</a>
+          <a href="#how" data-i18n="foot.learn2">How it works</a>
+          <a href="#faq" data-i18n="foot.learn3">FAQ</a>
         </div>
         <div class="footer-col">
-          <h4>Support</h4>
-          <a href="#">Contact us</a>
-          <a href="#">Shipping &amp; returns</a>
-          <a href="#">Track order</a>
+          <h4 data-i18n="foot.supportH">Support</h4>
+          <a href="#" data-i18n="foot.support1">Contact us</a>
+          <a href="#" data-i18n="foot.support2">Shipping &amp; returns</a>
+          <a href="#" data-i18n="foot.support3">Track order</a>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© <span id="year"></span> Pawcadi. All rights reserved.</span>
+        <span>© <span id="year"></span> Pawcadi. <span data-i18n="foot.rights">All rights reserved.</span></span>
         <span class="payments" aria-label="Accepted payments">💳 🅿️ 🍎 🇬</span>
       </div>
     </div>
@@ -412,14 +415,14 @@
   <div class="overlay" id="overlay"></div>
   <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Shopping cart">
     <div class="drawer-head">
-      <h3>Your cart</h3>
+      <h3 data-i18n="cart.title">Your cart</h3>
       <button class="drawer-close" id="closeCart" aria-label="Close cart">×</button>
     </div>
     <div class="drawer-body" id="cartBody"></div>
     <div class="drawer-foot">
-      <div class="cart-total"><span>Subtotal</span><span id="cartTotal">$0.00</span></div>
+      <div class="cart-total"><span data-i18n="cart.subtotal">Subtotal</span><span id="cartTotal">$0.00</span></div>
       <p class="ship-note" id="shipNote">Add $35.00 more for free shipping.</p>
-      <button class="btn btn-dark btn-block" id="checkoutBtn">Checkout</button>
+      <button class="btn btn-dark btn-block" id="checkoutBtn" data-i18n="cart.checkout">Checkout</button>
     </div>
   </aside>
 
