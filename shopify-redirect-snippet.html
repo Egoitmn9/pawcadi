@@ -26,9 +26,10 @@
   (function () {
     // Don't redirect inside Shopify's theme editor (so you can still edit it).
     if (window.Shopify && window.Shopify.designMode) return;
-    // Don't touch checkout pages.
+    // Don't touch checkout or the legal policy pages (must stay readable).
     var path = window.location.pathname;
-    if (path.indexOf("/checkout") === 0 || path.indexOf("/checkouts") === 0) return;
+    if (path.indexOf("/checkout") === 0 || path.indexOf("/checkouts") === 0 ||
+        path.indexOf("/policies") === 0) return;
     // Send everyone to the main Pawcadi website.
     window.location.replace("https://egoitmn9.github.io/pawcadi/");
   })();
