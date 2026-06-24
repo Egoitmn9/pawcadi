@@ -4,3 +4,7 @@ Thumbs.db
 
 # Local Claude Code config (kept private — never publish)
 .claude/
+
+# Local agent skills/tooling (not part of the website)
+.agents/
+skills-lock.json
